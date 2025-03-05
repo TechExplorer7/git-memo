@@ -37,3 +37,25 @@ git checkout -B main
 git push -f origin main
 git branch -d tmp
 ```
+
+## ブランチ操作
+
+```sh
+// ローカルブランチ一覧（カレントブランチには * が付く）
+git branch
+
+// リモートブランチ一覧
+git branch -r
+
+// 新規ブランチを作成
+git branch <New Branch name>
+
+// 既存ブランチの切替
+git switch <Branch name>
+
+// 新規ブランチを作成して切り替え
+git switch -c <New Branch name>
+
+// ブランチの削除（警告なしは -D を使用）
+git branch -d <Branch name>
+```
